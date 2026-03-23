@@ -199,9 +199,32 @@
     font-size: 1rem;
     font-weight: 800;
   }
-  .icon-kraken { background: rgba(90,60,180,0.18); color: #9B7DFF; }
-  .icon-bybit  { background: rgba(240,185,11,0.12); color: #F0B90B; }
-  .icon-ledger { background: rgba(0,120,200,0.12); color: #3A8FD1; }
+  .icon-kraken  { background: rgba(90,60,180,0.18); color: #9B7DFF; }
+  .icon-bybit   { background: rgba(240,185,11,0.12); color: #F0B90B; }
+  .icon-coinbase{ background: rgba(0,82,255,0.12); color: #0052FF; }
+  .icon-binance { background: rgba(240,185,11,0.12); color: #F3BA2F; }
+
+  /* SOCIAL */
+  .social-bar {
+    display: flex; flex-wrap: wrap; gap: 12px; justify-content: center;
+    padding: 2.5rem 1.5rem;
+    background: var(--bg2);
+    border-top: 0.5px solid var(--border);
+  }
+  .social-btn {
+    display: inline-flex; align-items: center; gap: 8px;
+    background: var(--bg3);
+    border: 0.5px solid var(--border);
+    color: var(--text-muted);
+    font-family: 'Syne', sans-serif;
+    font-size: 0.82rem;
+    font-weight: 600;
+    padding: 10px 20px;
+    border-radius: 999px;
+    text-decoration: none;
+    transition: border-color 0.2s, color 0.2s;
+  }
+  .social-btn:hover { border-color: var(--gold); color: var(--gold); }
   .card-name {
     font-family: 'Syne', sans-serif;
     font-weight: 700;
@@ -335,6 +358,76 @@
         </a>
       </div>
 
+      <!-- BYBIT -->
+      <div class="card">
+        <div class="card-header">
+          <div class="card-icon icon-bybit">BY</div>
+          <div>
+            <div class="card-name">Bybit</div>
+            <div class="card-type">Exchange per trader avanzati</div>
+          </div>
+        </div>
+        <p class="card-desc">
+          Piattaforma ideale per il trading con leva e i futures. Interfaccia professionale, ottima liquidità e ampia scelta di asset. Perfetto per chi vuole andare oltre il semplice acquisto.
+        </p>
+        <div class="card-pills">
+          <span class="pill good">✓ Trading con leva</span>
+          <span class="pill good">✓ Futures e opzioni</span>
+          <span class="pill">300+ asset</span>
+          <span class="pill">Fee da 0.10%</span>
+        </div>
+        <a href="https://www.bybit.com/invite?ref=YR2WQM9" class="card-cta" target="_blank" rel="noopener">
+          Apri conto Bybit →
+        </a>
+      </div>
+
+      <!-- COINBASE -->
+      <div class="card">
+        <div class="card-header">
+          <div class="card-icon icon-coinbase">CB</div>
+          <div>
+            <div class="card-name">Coinbase</div>
+            <div class="card-type">Ideale per principianti</div>
+          </div>
+        </div>
+        <p class="card-desc">
+          Il modo più semplice per comprare crypto. Interfaccia intuitiva, app eccellente e alta sicurezza. Quotato in borsa (NASDAQ), è uno degli exchange più affidabili al mondo.
+        </p>
+        <div class="card-pills">
+          <span class="pill good">✓ App semplicissima</span>
+          <span class="pill good">✓ Quotato NASDAQ</span>
+          <span class="pill good">✓ Carta crypto</span>
+          <span class="pill">200+ asset</span>
+        </div>
+        <a href="https://coinbase.com/join/AJ5QYMY?src=referral-link" class="card-cta" target="_blank" rel="noopener">
+          Apri conto Coinbase →
+        </a>
+      </div>
+
+      <!-- BINANCE -->
+      <div class="card">
+        <div class="card-header">
+          <div class="card-icon icon-binance">BN</div>
+          <div>
+            <div class="card-name">Binance</div>
+            <div class="card-type">Il più grande al mondo</div>
+          </div>
+        </div>
+        <p class="card-desc">
+          L'exchange con il maggior volume di scambi al mondo. Fee bassissime, oltre 350 criptovalute disponibili e un ecosistema completo di prodotti finanziari crypto.
+        </p>
+        <div class="card-pills">
+          <span class="pill good">✓ Fee minime</span>
+          <span class="pill good">✓ Massima liquidità</span>
+          <span class="pill good">✓ Staking e yield</span>
+          <span class="pill">350+ asset</span>
+          <span class="pill">Fee da 0.10%</span>
+        </div>
+        <a href="https://www.binance.com/activity/referral-entry/CPA?ref=CPA_00VJ8LLALU" class="card-cta" target="_blank" rel="noopener">
+          Apri conto Binance →
+        </a>
+      </div>
+
     </div>
   </div>
 </section>
@@ -369,6 +462,14 @@
     </div>
   </div>
 </section>
+
+<!-- SOCIAL -->
+<div class="social-bar">
+  <a href="YOUR_YOUTUBE_LINK" class="social-btn" target="_blank" rel="noopener">▶ YouTube</a>
+  <a href="YOUR_TIKTOK_LINK" class="social-btn" target="_blank" rel="noopener">♪ TikTok</a>
+  <a href="YOUR_TELEGRAM_LINK" class="social-btn" target="_blank" rel="noopener">✈ Telegram</a>
+  <a href="YOUR_INSTAGRAM_LINK" class="social-btn" target="_blank" rel="noopener">◎ Instagram</a>
+</div>
 
 <!-- DISCLAIMER -->
 <div class="disclaimer">
